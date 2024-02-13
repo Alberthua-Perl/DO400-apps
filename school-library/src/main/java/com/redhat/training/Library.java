@@ -20,6 +20,7 @@ public class Library {
         this.inventory = inventory;
     }
 
+    // 方法（函数）返回 Book 类型对象
     public Book checkOut(String studentId, String isbn) throws BookNotAvailableException {
         if (!inventory.isBookAvailable(isbn)) {
             throw new BookNotAvailableException(isbn);

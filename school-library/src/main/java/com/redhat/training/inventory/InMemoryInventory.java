@@ -9,6 +9,7 @@ import com.redhat.training.books.Book;
 
 
 @ApplicationScoped
+// Inventory 接口中各个方法的具体实现
 public class InMemoryInventory implements Inventory {
 
     int totalCopies = 0;

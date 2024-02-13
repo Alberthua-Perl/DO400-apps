@@ -5,6 +5,7 @@ public class Book {
     public String isbn;
     public String text;
 
+    // Book 类的两个构造器（构造函数）
     public Book(String isbn) {
         this.isbn = isbn;
         text = "";
