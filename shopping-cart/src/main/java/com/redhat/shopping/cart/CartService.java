@@ -26,6 +26,7 @@ public class CartService {
         });
     }
 
+    // 向购物车中添加商品
     public void addProduct(int productId, int quantity) throws ProductNotFoundInCatalogException {
         Product product = this.catalog.ofId(productId);
 
@@ -34,8 +35,10 @@ public class CartService {
         }
 
         this.products.get(product.id()).increaseQuantityBy(quantity);
+        // 统计单项产品在购物车中的数量
 
         this.recalculate();
+        // recalculate 方法根据各项产品的数量统计购物车中的产品总数
     }
 
     public void clear() {
