@@ -45,7 +45,7 @@ public class LibraryWithMockedInventoryTest {
 
         // Given
         when(inventory.isBookAvailable("book1")).thenReturn(false);
-        // 使用 Mockito 框架的 when 和 thenReturn方 法来模拟 inventory 对象的 isBookAvailable 方法。
+        // 使用 Mockito 框架的 when 和 thenReturn 方法来模拟 inventory 对象的 isBookAvailable 方法。
         // 这里假设 inventory 对象有一个 isBookAvailable 方法，用于检查书籍是否可用。
         // 在这个模拟中，无论传入什么参数，isBookAvailable 方法都返回 false，表示书籍不可用。
 
